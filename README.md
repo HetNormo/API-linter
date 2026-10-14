@@ -2,7 +2,7 @@
 
 Met dit pakket controleer je een API-beschrijving of een eventbericht op een aantal Normo-regels. Spectral is het programma dat de controles uitvoert. Dit pakket bevat de regels, de JavaScript-functies die daarbij horen en voorbeelden om mee te oefenen.
 
-Dit is versie **1.0.0-rc.1**. Deze versie is bedoeld om te testen en te beoordelen. Het is geen officiële uitgave of goedkeuring van Het Normo.
+## Dit is versie **1.0.0-rc.1**. Deze versie is bedoeld om te testen en te beoordelen. Het is (nog) geen officiële uitgave of goedkeuring van Het Normo.
 
 ## Wat betekenen de belangrijkste woorden?
 
