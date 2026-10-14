@@ -1,0 +1,47 @@
+{
+  "packageVersion": "1.0.0-rc.1",
+  "checkedAt": "2026-10-14T08:03:16.443444+00:00",
+  "node": "22.16.0",
+  "spectralTarget": "6.17.0",
+  "unitTests": {
+    "status": "passed",
+    "total": 234,
+    "passed": 234,
+    "failed": 0,
+    "report": "unit-tests.tap"
+  },
+  "structuralValidation": {
+    "status": "passed",
+    "checks": 29,
+    "report": "structure-checks.json"
+  },
+  "generatedRulesets": {
+    "status": "passed",
+    "total": 3
+  },
+  "spectralIntegration": {
+    "status": "not-executed",
+    "plannedCases": 9,
+    "reason": "npm installatie mislukt met EAI_AGAIN bij DNS resolutie van registry.npmjs.org",
+    "report": "local-integration.json"
+  },
+  "ownRules": {
+    "total": 69,
+    "byProfile": {
+      "events": 21,
+      "oas": 44,
+      "central": 4
+    },
+    "bySeverity": {
+      "error": 49,
+      "warn": 17,
+      "info": 3
+    }
+  },
+  "dependencies": {
+    "directCliVersionPinned": true,
+    "lockfilePresent": false,
+    "auditExecuted": false
+  },
+  "acceptanceStatus": "candidate, integration acceptance outstanding"
+}

@@ -1,0 +1,426 @@
+[
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "STD01",
+    "rules": [],
+    "coverage": "handmatig",
+    "review": "De volledige ASNO strategie en ADR uitbreidingen zijn niet integraal geïmplementeerd. Toets dit afzonderlijk zonder strijdige taalregels over te nemen."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "STD02",
+    "rules": [],
+    "coverage": "handmatig",
+    "review": "Semantische modelkeuze en modelconformiteit blijven een architectuurreview."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID01",
+    "rules": [],
+    "coverage": "handmatig",
+    "review": "Brits Engels en bedrijfsspecifieke taalafspraken vragen taalreview."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID02",
+    "rules": [
+      "normo-api-version",
+      "normo-api-uri-major"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID03",
+    "rules": [
+      "normo-api-parameter-purpose",
+      "normo-api-query-underscore-advice"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID04",
+    "rules": [
+      "normo-api-parameter-purpose",
+      "normo-api-query-underscore-advice"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID05",
+    "rules": [
+      "normo-api-problem-media",
+      "normo-api-problem-fields",
+      "normo-api-problem-examples",
+      "normo-api-error-detail-review",
+      "tool-api-default-review"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID06",
+    "rules": [],
+    "coverage": "handmatig",
+    "review": "Keuze tussen OData, WFS en REST vraagt een architectuurbesluit."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID07",
+    "rules": [
+      "normo-api-info",
+      "normo-api-release-date"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID08",
+    "rules": [
+      "tool-api-operation-kind",
+      "normo-api-get-no-body",
+      "http-api-no-content",
+      "normo-api-precondition-responses",
+      "normo-api-mutation-review"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID09",
+    "rules": [],
+    "coverage": "handmatig",
+    "review": "De intentie van een complexe zoekopdracht vraagt classificatie; automatische POST /search herkenning ondersteunt alleen de statusmatrix."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID10",
+    "rules": [
+      "normo-api-status-codes"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID11",
+    "rules": [
+      "normo-api-body-schema"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID12",
+    "rules": [
+      "normo-api-qos-review"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "QoS prestaties en de samenhang met de Business Service vragen review en metingen."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID13",
+    "rules": [
+      "normo-api-date-examples",
+      "normo-api-date-utc-advice"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID14",
+    "rules": [
+      "normo-api-string-min-length",
+      "normo-api-string-max-length",
+      "normo-api-string-bounds"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID15",
+    "rules": [
+      "profile-api-effective-security",
+      "normo-api-oauth-scheme",
+      "oas-api-security-references",
+      "profile-api-oauth-https",
+      "normo-api-oauth-flow-advice",
+      "profile-api-no-query-credentials"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID16",
+    "rules": [
+      "normo-api-property-names"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID17",
+    "rules": [],
+    "coverage": "handmatig",
+    "review": "De noodzaak en semantische correctheid van HAL relaties vragen review. Gereserveerde HAL veldnamen blijven toegestaan."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID18",
+    "rules": [
+      "normo-api-parameter-purpose"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID19",
+    "rules": [
+      "normo-api-parameter-purpose"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID20",
+    "rules": [
+      "normo-api-created-reference",
+      "normo-api-sender-header"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "Headercardinaliteit volgt de Business Service; er bestaat geen universeel verplichte set."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID21",
+    "rules": [
+      "normo-api-enum-case",
+      "normo-api-no-dynamic-enum",
+      "normo-api-enum-review"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID22",
+    "rules": [],
+    "coverage": "handmatig",
+    "review": "Noodzaak, gevoeligheid, logging en versleuteling vragen privacy en security review. Dit pakket geeft geen juridische conformiteitsverklaring."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID23",
+    "rules": [
+      "tool-oas-supported-version"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID24",
+    "rules": [
+      "normo-api-schema-composition"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID25",
+    "rules": [],
+    "coverage": "handmatig",
+    "review": "Conditionele attribuutautorisatie vraagt implementatie en runtime tests."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID26",
+    "rules": [
+      "normo-api-cursor-contract",
+      "normo-api-cursor-default-advice",
+      "normo-api-pagination-review"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "API Design Rules",
+    "version": "6.0",
+    "reference": "ID27",
+    "rules": [
+      "normo-api-foreign-key-query"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "De linter controleert contractinformatie; werkelijk gedrag en semantische juistheid vragen aanvullende tests of review."
+  },
+  {
+    "standard": "Event Data Specification",
+    "version": "2.0",
+    "reference": "ID01",
+    "rules": [
+      "normo-event-specversion"
+    ],
+    "coverage": "statisch",
+    "review": "Controle op het aangeleverde JSON event, niet op alle toekomstige gebeurtenissen."
+  },
+  {
+    "standard": "Event Data Specification",
+    "version": "2.0",
+    "reference": "ID02",
+    "rules": [
+      "normo-event-id",
+      "normo-event-id-uuid"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "Uniciteit over alle gebeurtenissen vereist opslag bij de producer; retransmissies van hetzelfde event zijn toegestaan."
+  },
+  {
+    "standard": "Event Data Specification",
+    "version": "2.0",
+    "reference": "ID03",
+    "rules": [
+      "normo-event-source",
+      "normo-event-source-ean13"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "Organisatie, logische bron en registeridentiteit vragen verificatie buiten deze linter."
+  },
+  {
+    "standard": "Event Data Specification",
+    "version": "2.0",
+    "reference": "ID04",
+    "rules": [
+      "normo-event-type",
+      "normo-event-past-tense"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "Betekenis en verleden tijd blijven deels taalkundige review."
+  },
+  {
+    "standard": "Event Data Specification",
+    "version": "2.0",
+    "reference": "ID05",
+    "rules": [
+      "normo-event-content-type"
+    ],
+    "coverage": "statisch",
+    "review": "Controle op het aangeleverde JSON event, niet op alle toekomstige gebeurtenissen."
+  },
+  {
+    "standard": "Event Data Specification",
+    "version": "2.0",
+    "reference": "ID06",
+    "rules": [
+      "normo-event-time"
+    ],
+    "coverage": "statisch",
+    "review": "Controle op het aangeleverde JSON event, niet op alle toekomstige gebeurtenissen."
+  },
+  {
+    "standard": "Event Data Specification",
+    "version": "2.0",
+    "reference": "ID07",
+    "rules": [
+      "normo-event-data-version"
+    ],
+    "coverage": "statisch",
+    "review": "Controle op het aangeleverde JSON event, niet op alle toekomstige gebeurtenissen."
+  },
+  {
+    "standard": "Event Data Specification",
+    "version": "2.0",
+    "reference": "ID08",
+    "rules": [
+      "normo-event-data-object"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "Interpretatie E01 volgt het niet lege object; er is geen validatie tegen een domeinschema."
+  },
+  {
+    "standard": "Event Data Specification",
+    "version": "2.0",
+    "reference": "ID09",
+    "rules": [
+      "normo-event-size-limit",
+      "normo-event-size-advice"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "Controleer feitelijke serialized bytes en protocoloverhead in de transportketen."
+  },
+  {
+    "standard": "Event Data Specification",
+    "version": "2.0",
+    "reference": "ID10",
+    "rules": [
+      "normo-event-context-names",
+      "normo-event-payload-names"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "Event en REST payload delen een semantisch model; vergelijk beide contracten afzonderlijk."
+  },
+  {
+    "standard": "Event Data Specification",
+    "version": "2.0",
+    "reference": "ID11",
+    "rules": [
+      "normo-event-subject"
+    ],
+    "coverage": "statisch",
+    "review": "Controle op het aangeleverde JSON event, niet op alle toekomstige gebeurtenissen."
+  },
+  {
+    "standard": "Event Data Specification",
+    "version": "2.0",
+    "reference": "ID12",
+    "rules": [
+      "normo-event-dataref"
+    ],
+    "coverage": "gedeeltelijk",
+    "review": "Toegangsrechten, bereikbaarheid en verwijzing naar het juiste object vragen runtime tests."
+  }
+]

@@ -1,0 +1,805 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Illustrative Market Agreements API",
+    "description": "Synthetic specification for Normo ruleset tests.",
+    "termsOfService": "https://example.org/terms",
+    "contact": {
+      "name": "Example API team",
+      "email": "api@example.org"
+    },
+    "license": {
+      "name": "Example usage terms",
+      "url": "https://example.org/terms"
+    },
+    "version": "1.2.0",
+    "x-releaseDate": "2026-05-06",
+    "x-normo-qos": "https://example.org/service/qos"
+  },
+  "servers": [
+    {
+      "url": "https://api.cmf.energysector.nl/energy-market/market-participant/market-agreement/contract-management/v1"
+    }
+  ],
+  "tags": [
+    {
+      "name": "agreements",
+      "description": "Market agreement examples."
+    }
+  ],
+  "security": [
+    {
+      "oidc": []
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "oidc": {
+        "type": "openIdConnect",
+        "openIdConnectUrl": "https://example.org/.well-known/openid-configuration"
+      }
+    },
+    "schemas": {
+      "Problem": {
+        "type": "object",
+        "required": [
+          "type",
+          "title",
+          "status"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2048,
+            "format": "uri-reference"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "status": {
+            "type": "integer",
+            "minimum": 400,
+            "maximum": 599
+          },
+          "detail": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2000
+          },
+          "instance": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2048,
+            "format": "uri-reference"
+          }
+        }
+      },
+      "Agreement": {
+        "type": "object",
+        "required": [
+          "id",
+          "agreementStatus"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 36,
+            "format": "uuid"
+          },
+          "agreementStatus": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 20,
+            "enum": [
+              "ACTIVE",
+              "TERMINATED"
+            ],
+            "x-normo-enum-kind": "static"
+          },
+          "changedAt": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 30,
+            "format": "date-time",
+            "example": "2026-05-06T12:00:00.000Z"
+          }
+        }
+      }
+    }
+  },
+  "paths": {
+    "/market-agreements": {
+      "get": {
+        "operationId": "listAgreements",
+        "summary": "listAgreements",
+        "description": "Illustrative contract for ruleset testing, not an operational service.",
+        "tags": [
+          "agreements"
+        ],
+        "responses": {
+          "200": {
+            "description": "HTTP 200 response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "agreements"
+                  ],
+                  "properties": {
+                    "nextCursor": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 2048
+                    },
+                    "agreements": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Agreement"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "HTTP 401 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 401
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "HTTP 403 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 403
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "HTTP 404 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 404
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "HTTP 422 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 422
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "HTTP 500 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 500
+                }
+              }
+            }
+          }
+        },
+        "x-normo-pagination": "cursor",
+        "parameters": [
+          {
+            "name": "_cursor",
+            "in": "query",
+            "required": false,
+            "description": "Opaque cursor returned by the preceding request, valid for at most five minutes.",
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            }
+          },
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of records per page.",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000,
+              "default": 100
+            }
+          }
+        ]
+      },
+      "post": {
+        "operationId": "createAgreement",
+        "summary": "createAgreement",
+        "description": "Illustrative contract for ruleset testing, not an operational service.",
+        "tags": [
+          "agreements"
+        ],
+        "responses": {
+          "201": {
+            "description": "HTTP 201 response.",
+            "headers": {
+              "Location": {
+                "description": "Absolute URL of the created resource.",
+                "schema": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 2048,
+                  "format": "uri"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "HTTP 401 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 401
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "HTTP 403 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 403
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "HTTP 422 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 422
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "HTTP 500 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 500
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Agreement"
+              }
+            }
+          }
+        }
+      },
+      "options": {
+        "operationId": "describeAgreements",
+        "summary": "describeAgreements",
+        "description": "Illustrative contract for ruleset testing, not an operational service.",
+        "tags": [
+          "agreements"
+        ],
+        "responses": {
+          "204": {
+            "description": "HTTP 204 response.",
+            "headers": {
+              "Allow": {
+                "description": "Supported methods.",
+                "schema": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 200
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "HTTP 401 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 401
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "HTTP 403 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 403
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "HTTP 500 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 500
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/market-agreements/{agreementId}": {
+      "parameters": [
+        {
+          "name": "agreementId",
+          "in": "path",
+          "required": true,
+          "description": "Primary resource identity.",
+          "schema": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 36,
+            "format": "uuid"
+          }
+        }
+      ],
+      "get": {
+        "operationId": "readAgreement",
+        "summary": "readAgreement",
+        "description": "Illustrative contract for ruleset testing, not an operational service.",
+        "tags": [
+          "agreements"
+        ],
+        "responses": {
+          "200": {
+            "description": "HTTP 200 response.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Agreement"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "HTTP 401 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 401
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "HTTP 403 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 403
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "HTTP 404 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 404
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "HTTP 500 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 500
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "operationId": "replaceAgreement",
+        "summary": "replaceAgreement",
+        "description": "Illustrative contract for ruleset testing, not an operational service.",
+        "tags": [
+          "agreements"
+        ],
+        "responses": {
+          "204": {
+            "description": "HTTP 204 response."
+          },
+          "401": {
+            "description": "HTTP 401 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 401
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "HTTP 403 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 403
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "HTTP 404 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 404
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "HTTP 422 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 422
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "HTTP 500 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 500
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Agreement"
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "operationId": "changeAgreement",
+        "summary": "changeAgreement",
+        "description": "Illustrative contract for ruleset testing, not an operational service.",
+        "tags": [
+          "agreements"
+        ],
+        "responses": {
+          "204": {
+            "description": "HTTP 204 response."
+          },
+          "401": {
+            "description": "HTTP 401 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 401
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "HTTP 403 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 403
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "HTTP 404 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 404
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "HTTP 422 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 422
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "HTTP 500 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 500
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/merge-patch+json": {
+              "schema": {}
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "deleteAgreement",
+        "summary": "deleteAgreement",
+        "description": "Illustrative contract for ruleset testing, not an operational service.",
+        "tags": [
+          "agreements"
+        ],
+        "responses": {
+          "204": {
+            "description": "HTTP 204 response."
+          },
+          "401": {
+            "description": "HTTP 401 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 401
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "HTTP 403 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 403
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "HTTP 404 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 404
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "HTTP 500 response.",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problem"
+                },
+                "example": {
+                  "type": "about:blank",
+                  "title": "Request failed",
+                  "status": 500
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "operationId": "inspectAgreement",
+        "summary": "inspectAgreement",
+        "description": "Illustrative contract for ruleset testing, not an operational service.",
+        "tags": [
+          "agreements"
+        ],
+        "responses": {
+          "204": {
+            "description": "HTTP 204 response."
+          },
+          "401": {
+            "description": "HTTP 401 response."
+          },
+          "403": {
+            "description": "HTTP 403 response."
+          },
+          "404": {
+            "description": "HTTP 404 response."
+          },
+          "500": {
+            "description": "HTTP 500 response."
+          }
+        }
+      }
+    }
+  }
+}

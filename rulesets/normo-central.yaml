@@ -1,0 +1,51 @@
+# Gegenereerd met npm run build:rulesets. Zie docs/BESLUITEN.md.
+extends:
+  - "./normo-oas.yaml"
+functionsDir: "./functions"
+functions:
+  - "normoUri"
+rules:
+  normo-uri-central-authority:
+    description: "Authority: Centrale domeinstructuur."
+    documentationUrl: "https://hetnormo.github.io/API-standards/uri-conventions/#authority-result"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoUri
+      functionOptions:
+        check: "authority"
+  normo-uri-hierarchy-review:
+    description: "Path: NBility structuur en centrale versiegrens."
+    documentationUrl: "https://hetnormo.github.io/API-standards/uri-conventions/#path-component"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: true
+    then:
+      function: normoUri
+      functionOptions:
+        check: "hierarchy"
+  normo-uri-lowercase:
+    description: "URI ID04: Kleine letters in letterlijke padsegmenten."
+    documentationUrl: "https://hetnormo.github.io/API-standards/uri-conventions/#id-04"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoUri
+      functionOptions:
+        check: "case"
+  tool-uri-variable-review:
+    description: "Server variables: Niet volledig begrensde servervariabelen."
+    documentationUrl: "https://spec.openapis.org/oas/v3.1.0.html#server-object"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: true
+    then:
+      function: normoUri
+      functionOptions:
+        check: "variables"

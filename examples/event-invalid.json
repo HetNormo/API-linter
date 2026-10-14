@@ -1,0 +1,20 @@
+{
+  "specversion": "1.0",
+  "id": "af357a68-3723-4d33-8128-bb120b9e59a6",
+  "source": "urn:ean13:12345:example",
+  "type": "mdm.meter.updated",
+  "time": "2026-02-30T12:00:00.123Z",
+  "subject": "E00000000035671400",
+  "datacontenttype": "application/json",
+  "dataversion": "01.2",
+  "data": {
+    "meterNumber": "E00000000035671400",
+    "readingValue": 123.45,
+    "readings": [
+      {
+        "readingValue": 5.25
+      }
+    ],
+    "Meter_number": "X"
+  }
+}

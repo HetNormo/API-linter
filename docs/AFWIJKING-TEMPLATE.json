@@ -1,0 +1,15 @@
+{
+  "status": "concept",
+  "ruleCode": "",
+  "document": "",
+  "jsonPointer": "",
+  "reason": "",
+  "source": "",
+  "owner": "",
+  "reviewer": "",
+  "approvedAt": null,
+  "expiresAt": null,
+  "normVersion": "",
+  "rulesetVersion": "1.0.0-rc.1",
+  "note": "Registratie alleen. Dit bestand schakelt geen lintregel uit."
+}

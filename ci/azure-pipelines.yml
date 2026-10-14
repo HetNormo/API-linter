@@ -1,0 +1,26 @@
+# Voorbeeld voor kopiëren naar de repositoryroot. Pas contractlocaties aan.
+# Acceptatievoorwaarde: een beoordeelde package-lock.json staat in de repository.
+trigger:
+  - main
+pool:
+  vmImage: ubuntu-latest
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '22.x'
+    displayName: Node.js installeren
+  - bash: |
+      set -euo pipefail
+      test -f package-lock.json || { echo 'Leg eerst een beoordeelde package-lock.json vast.'; exit 2; }
+      npm ci --ignore-scripts
+      npm run verify
+      npm run lint:api -- examples/api-valid.yaml
+      npm run lint:events -- examples/event-valid.json
+      npm run check:size -- examples/event-valid.json
+    displayName: Ruleset en voorbeelden controleren
+  - task: PublishPipelineArtifact@1
+    condition: always()
+    inputs:
+      targetPath: reports
+      artifact: normo-validatierapporten
+    displayName: Validatierapporten bewaren

@@ -1,0 +1,240 @@
+# Gegenereerd met npm run build:rulesets. Zie docs/BESLUITEN.md.
+functionsDir: "./functions"
+functions:
+  - "normoEvent"
+rules:
+  tool-event-document:
+    description: "Profiel: Controle van het invoerprofiel."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "document"
+  normo-event-specversion:
+    description: "ID01: CloudEvents versiewaarde."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#field-specversion"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "specversion"
+  normo-event-id:
+    description: "ID02: Niet lege eventidentificatie."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#field-id"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "id"
+  normo-event-id-uuid:
+    description: "ID02: UUID aanbeveling."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#field-id"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "uuid"
+  normo-event-source:
+    description: "ID03: Samengestelde bronidentificatie."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#field-source"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "source"
+  normo-event-source-ean13:
+    description: "ID03: EAN13 lexicale interpretatie."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#field-source"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "sourceIdentifier"
+  normo-event-type:
+    description: "ID04: Drieledige eventtypering."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#field-type"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "type"
+  normo-event-past-tense:
+    description: "ID04: Signalering van mogelijk ontbrekende verleden tijd."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#field-type"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "pastTense"
+  normo-event-content-type:
+    description: "ID05: Voorwaardelijke aanwezigheid en MIME syntaxis."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#field-datacontenttype"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "contentType"
+  normo-event-time:
+    description: "ID06: UTC tijdstempel met microseconden."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#field-time"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "time"
+  normo-event-data-version:
+    description: "ID07: Voorwaardelijke payloadversie."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#field-dataversion"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "dataVersion"
+  normo-event-data-object:
+    description: "ID08: Niet leeg dataobject volgens gekozen interpretatie."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#field-data"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "data"
+  cloudevents-event-data-encoding:
+    description: "CE JSON 3.1: Samenhang tussen MIME type en JSON representatie."
+    documentationUrl: "https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/json-format.md#31-handling-of-data"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "encoding"
+  normo-event-size-limit:
+    description: "ID09: Bovengrens op compacte representatie en geconfigureerde overhead."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#message-size"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "sizeLimit"
+        bytesPerKB: 1000
+        transportOverheadBytes: 0
+  normo-event-size-advice:
+    description: "ID09: Adviesgrens op compacte representatie."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#message-size"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "sizeAdvice"
+        bytesPerKB: 1000
+        transportOverheadBytes: 0
+  normo-event-context-names:
+    description: "ID10: Contextnamen en maximale naamlengte."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#naming-convention"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "contextNames"
+  normo-event-payload-names:
+    description: "ID10: Recursieve veldnaamcontrole met specifieke modeluitzonderingen."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#naming-convention"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "payloadNames"
+  normo-event-subject:
+    description: "ID11: Optioneel subject."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#field-subject"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "subject"
+  normo-event-dataref:
+    description: "ID12: Optionele verwijzing naar gegevens."
+    documentationUrl: "https://hetnormo.github.io/API-standards/event-data-specs/#field-dataref"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "dataref"
+  cloudevents-event-dataschema:
+    description: "CE dataschema: URI vorm van een opgegeven schema."
+    documentationUrl: "https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#dataschema"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "dataSchema"
+  cloudevents-event-context-values:
+    description: "CE type system: Contexttypen en Unicode waarden."
+    documentationUrl: "https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#type-system"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: false
+    then:
+      function: normoEvent
+      functionOptions:
+        check: "contextValues"

@@ -1,0 +1,150 @@
+{
+  "status": "passed",
+  "scope": "Bestandssyntaxis, configuratiestructuur en catalogussamenhang, geen Spectral uitvoering",
+  "checks": [
+    {
+      "file": ".spectral-events.yaml",
+      "check": "YAML parse en unieke keys",
+      "passed": true
+    },
+    {
+      "file": ".spectral.yaml",
+      "check": "YAML parse en unieke keys",
+      "passed": true
+    },
+    {
+      "file": "ci/azure-pipelines.yml",
+      "check": "YAML parse en unieke keys",
+      "passed": true
+    },
+    {
+      "file": "docs/AFWIJKING-TEMPLATE.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "file": "docs/coverage.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "file": "examples/api-invalid.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "file": "examples/api-references.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "file": "examples/api-valid.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "file": "examples/api-valid.yaml",
+      "check": "YAML parse en unieke keys",
+      "passed": true
+    },
+    {
+      "file": "examples/event-invalid.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "file": "examples/event-thin.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "file": "examples/event-valid.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "file": "package.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "file": "reports/event-size.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "file": "reports/local-integration.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "file": "rulesets/functions/normoEvent.js",
+      "check": "Node syntax",
+      "passed": true
+    },
+    {
+      "file": "rulesets/functions/normoOas.js",
+      "check": "Node syntax",
+      "passed": true
+    },
+    {
+      "file": "rulesets/functions/normoUri.js",
+      "check": "Node syntax",
+      "passed": true
+    },
+    {
+      "file": "rulesets/lib/shared.js",
+      "check": "Node syntax",
+      "passed": true
+    },
+    {
+      "file": "rulesets/normo-central.yaml",
+      "check": "YAML parse en unieke keys",
+      "passed": true
+    },
+    {
+      "file": "rulesets/normo-events.yaml",
+      "check": "YAML parse en unieke keys",
+      "passed": true
+    },
+    {
+      "file": "rulesets/normo-oas.yaml",
+      "check": "YAML parse en unieke keys",
+      "passed": true
+    },
+    {
+      "file": "rulesets/rule-catalog.json",
+      "check": "JSON parse",
+      "passed": true
+    },
+    {
+      "file": "scripts/check-event-size.mjs",
+      "check": "Node syntax",
+      "passed": true
+    },
+    {
+      "file": "scripts/check-generated.mjs",
+      "check": "Node syntax",
+      "passed": true
+    },
+    {
+      "file": "scripts/generate-rulesets.mjs",
+      "check": "Node syntax",
+      "passed": true
+    },
+    {
+      "file": "scripts/integration.mjs",
+      "check": "Node syntax",
+      "passed": true
+    },
+    {
+      "file": "tests/unit.test.mjs",
+      "check": "Node syntax",
+      "passed": true
+    },
+    {
+      "check": "JSON en YAML positieve API voorbeelden gelijk",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "file": "examples/event-valid.json",
+  "fileBytes": 451,
+  "compactJsonBytes": 363,
+  "overheadBytes": 0,
+  "totalMeasuredBytes": 451,
+  "recommendedMaximumBytes": 64000,
+  "maximumBytes": 256000,
+  "severity": "none",
+  "scope": "Oorspronkelijke bestandsbytes plus opgegeven overhead. Geen meting van de volledige transportverbinding."
+}

@@ -1,0 +1,24 @@
+{
+  "name": "normo-spectral-ruleset",
+  "version": "1.0.0-rc.1",
+  "private": true,
+  "type": "module",
+  "description": "Spectral regels voor Normo REST contracten en gestructureerde JSON events",
+  "engines": {
+    "node": "^22.0.0 || >=24.0.0"
+  },
+  "scripts": {
+    "test": "node --test tests/unit.test.mjs",
+    "test:integration": "node scripts/integration.mjs",
+    "lint:api": "spectral lint --ruleset .spectral.yaml --fail-severity error",
+    "lint:events": "spectral lint --ruleset .spectral-events.yaml --fail-severity error",
+    "lint:central": "spectral lint --ruleset rulesets/normo-central.yaml --fail-severity error",
+    "check:size": "node scripts/check-event-size.mjs",
+    "check:generated": "node scripts/check-generated.mjs",
+    "build:rulesets": "node scripts/generate-rulesets.mjs",
+    "verify": "npm test && npm run check:generated && npm run test:integration"
+  },
+  "devDependencies": {
+    "@stoplight/spectral-cli": "6.17.0"
+  }
+}

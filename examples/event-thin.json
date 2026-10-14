@@ -1,0 +1,9 @@
+{
+  "specversion": "1.0",
+  "id": "af357a68-3723-4d33-8128-bb120b9e59a6",
+  "source": "urn:ean13:8716859000003:example",
+  "type": "mdm.meter.updated",
+  "time": "2026-05-06T12:00:00.123456Z",
+  "subject": "E00000000035671400",
+  "dataref": "https://example.org/meters/E00000000035671400"
+}

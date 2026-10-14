@@ -1,0 +1,3 @@
+# Eén gestructureerd JSON CloudEvent per bestand. Geen AsyncAPI document.
+extends:
+  - ./rulesets/normo-events.yaml

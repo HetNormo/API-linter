@@ -1,0 +1,1418 @@
+
+> normo-spectral-ruleset@1.0.0-rc.1 test
+> node --test tests/unit.test.mjs
+
+TAP version 13
+# Subtest: events/document: positief referentiegeval
+ok 1 - events/document: positief referentiegeval
+  ---
+  duration_ms: 2.853811
+  type: 'test'
+  ...
+# Subtest: events/specversion: positief referentiegeval
+ok 2 - events/specversion: positief referentiegeval
+  ---
+  duration_ms: 0.194319
+  type: 'test'
+  ...
+# Subtest: events/id: positief referentiegeval
+ok 3 - events/id: positief referentiegeval
+  ---
+  duration_ms: 0.088932
+  type: 'test'
+  ...
+# Subtest: events/uuid: positief referentiegeval
+ok 4 - events/uuid: positief referentiegeval
+  ---
+  duration_ms: 0.205656
+  type: 'test'
+  ...
+# Subtest: events/source: positief referentiegeval
+ok 5 - events/source: positief referentiegeval
+  ---
+  duration_ms: 0.426905
+  type: 'test'
+  ...
+# Subtest: events/sourceIdentifier: positief referentiegeval
+ok 6 - events/sourceIdentifier: positief referentiegeval
+  ---
+  duration_ms: 0.131326
+  type: 'test'
+  ...
+# Subtest: events/type: positief referentiegeval
+ok 7 - events/type: positief referentiegeval
+  ---
+  duration_ms: 0.281338
+  type: 'test'
+  ...
+# Subtest: events/pastTense: positief referentiegeval
+ok 8 - events/pastTense: positief referentiegeval
+  ---
+  duration_ms: 0.122262
+  type: 'test'
+  ...
+# Subtest: events/contentType: positief referentiegeval
+ok 9 - events/contentType: positief referentiegeval
+  ---
+  duration_ms: 0.792197
+  type: 'test'
+  ...
+# Subtest: events/time: positief referentiegeval
+ok 10 - events/time: positief referentiegeval
+  ---
+  duration_ms: 0.464691
+  type: 'test'
+  ...
+# Subtest: events/dataVersion: positief referentiegeval
+ok 11 - events/dataVersion: positief referentiegeval
+  ---
+  duration_ms: 0.274768
+  type: 'test'
+  ...
+# Subtest: events/data: positief referentiegeval
+ok 12 - events/data: positief referentiegeval
+  ---
+  duration_ms: 0.10766
+  type: 'test'
+  ...
+# Subtest: events/encoding: positief referentiegeval
+ok 13 - events/encoding: positief referentiegeval
+  ---
+  duration_ms: 1.116359
+  type: 'test'
+  ...
+# Subtest: events/sizeLimit: positief referentiegeval
+ok 14 - events/sizeLimit: positief referentiegeval
+  ---
+  duration_ms: 0.173407
+  type: 'test'
+  ...
+# Subtest: events/sizeAdvice: positief referentiegeval
+ok 15 - events/sizeAdvice: positief referentiegeval
+  ---
+  duration_ms: 0.06769
+  type: 'test'
+  ...
+# Subtest: events/contextNames: positief referentiegeval
+ok 16 - events/contextNames: positief referentiegeval
+  ---
+  duration_ms: 0.098105
+  type: 'test'
+  ...
+# Subtest: events/payloadNames: positief referentiegeval
+ok 17 - events/payloadNames: positief referentiegeval
+  ---
+  duration_ms: 0.214779
+  type: 'test'
+  ...
+# Subtest: events/subject: positief referentiegeval
+ok 18 - events/subject: positief referentiegeval
+  ---
+  duration_ms: 0.06061
+  type: 'test'
+  ...
+# Subtest: events/dataref: positief referentiegeval
+ok 19 - events/dataref: positief referentiegeval
+  ---
+  duration_ms: 0.044957
+  type: 'test'
+  ...
+# Subtest: events/dataSchema: positief referentiegeval
+ok 20 - events/dataSchema: positief referentiegeval
+  ---
+  duration_ms: 0.042333
+  type: 'test'
+  ...
+# Subtest: events/contextValues: positief referentiegeval
+ok 21 - events/contextValues: positief referentiegeval
+  ---
+  duration_ms: 0.176202
+  type: 'test'
+  ...
+# Subtest: oas/document: positief referentiegeval
+ok 22 - oas/document: positief referentiegeval
+  ---
+  duration_ms: 1.357808
+  type: 'test'
+  ...
+# Subtest: oas/info: positief referentiegeval
+ok 23 - oas/info: positief referentiegeval
+  ---
+  duration_ms: 0.510759
+  type: 'test'
+  ...
+# Subtest: oas/version: positief referentiegeval
+ok 24 - oas/version: positief referentiegeval
+  ---
+  duration_ms: 0.443909
+  type: 'test'
+  ...
+# Subtest: oas/releaseDate: positief referentiegeval
+ok 25 - oas/releaseDate: positief referentiegeval
+  ---
+  duration_ms: 0.379523
+  type: 'test'
+  ...
+# Subtest: oas/operationKind: positief referentiegeval
+ok 26 - oas/operationKind: positief referentiegeval
+  ---
+  duration_ms: 0.696434
+  type: 'test'
+  ...
+# Subtest: oas/statusCodes: positief referentiegeval
+ok 27 - oas/statusCodes: positief referentiegeval
+  ---
+  duration_ms: 0.53175
+  type: 'test'
+  ...
+# Subtest: oas/getBody: positief referentiegeval
+ok 28 - oas/getBody: positief referentiegeval
+  ---
+  duration_ms: 0.900698
+  type: 'test'
+  ...
+# Subtest: oas/noContent: positief referentiegeval
+ok 29 - oas/noContent: positief referentiegeval
+  ---
+  duration_ms: 0.529767
+  type: 'test'
+  ...
+# Subtest: oas/createdLocation: positief referentiegeval
+ok 30 - oas/createdLocation: positief referentiegeval
+  ---
+  duration_ms: 1.254725
+  type: 'test'
+  ...
+# Subtest: oas/preconditions: positief referentiegeval
+ok 31 - oas/preconditions: positief referentiegeval
+  ---
+  duration_ms: 0.555075
+  type: 'test'
+  ...
+# Subtest: oas/mutationReview: positief referentiegeval
+ok 32 - oas/mutationReview: positief referentiegeval
+  ---
+  duration_ms: 0.726119
+  type: 'test'
+  ...
+# Subtest: oas/bodySchema: positief referentiegeval
+ok 33 - oas/bodySchema: positief referentiegeval
+  ---
+  duration_ms: 0.777595
+  type: 'test'
+  ...
+# Subtest: oas/problemMedia: positief referentiegeval
+ok 34 - oas/problemMedia: positief referentiegeval
+  ---
+  duration_ms: 0.77416
+  type: 'test'
+  ...
+# Subtest: oas/problemFields: positief referentiegeval
+ok 35 - oas/problemFields: positief referentiegeval
+  ---
+  duration_ms: 1.383546
+  type: 'test'
+  ...
+# Subtest: oas/problemExamples: positief referentiegeval
+ok 36 - oas/problemExamples: positief referentiegeval
+  ---
+  duration_ms: 0.564159
+  type: 'test'
+  ...
+# Subtest: oas/problemLeak: positief referentiegeval
+ok 37 - oas/problemLeak: positief referentiegeval
+  ---
+  duration_ms: 0.949671
+  type: 'test'
+  ...
+# Subtest: oas/defaultReview: positief referentiegeval
+ok 38 - oas/defaultReview: positief referentiegeval
+  ---
+  duration_ms: 0.438462
+  type: 'test'
+  ...
+# Subtest: oas/stringMin: positief referentiegeval
+ok 39 - oas/stringMin: positief referentiegeval
+  ---
+  duration_ms: 3.130121
+  type: 'test'
+  ...
+# Subtest: oas/stringMax: positief referentiegeval
+ok 40 - oas/stringMax: positief referentiegeval
+  ---
+  duration_ms: 1.798753
+  type: 'test'
+  ...
+# Subtest: oas/stringBounds: positief referentiegeval
+ok 41 - oas/stringBounds: positief referentiegeval
+  ---
+  duration_ms: 1.89791
+  type: 'test'
+  ...
+# Subtest: oas/dateExamples: positief referentiegeval
+ok 42 - oas/dateExamples: positief referentiegeval
+  ---
+  duration_ms: 2.576268
+  type: 'test'
+  ...
+# Subtest: oas/dateAdvice: positief referentiegeval
+ok 43 - oas/dateAdvice: positief referentiegeval
+  ---
+  duration_ms: 2.324363
+  type: 'test'
+  ...
+# Subtest: oas/propertyNames: positief referentiegeval
+ok 44 - oas/propertyNames: positief referentiegeval
+  ---
+  duration_ms: 2.672972
+  type: 'test'
+  ...
+# Subtest: oas/enumCase: positief referentiegeval
+ok 45 - oas/enumCase: positief referentiegeval
+  ---
+  duration_ms: 2.730367
+  type: 'test'
+  ...
+# Subtest: oas/enumDynamic: positief referentiegeval
+ok 46 - oas/enumDynamic: positief referentiegeval
+  ---
+  duration_ms: 2.320197
+  type: 'test'
+  ...
+# Subtest: oas/enumReview: positief referentiegeval
+ok 47 - oas/enumReview: positief referentiegeval
+  ---
+  duration_ms: 2.819609
+  type: 'test'
+  ...
+# Subtest: oas/composition: positief referentiegeval
+ok 48 - oas/composition: positief referentiegeval
+  ---
+  duration_ms: 2.434467
+  type: 'test'
+  ...
+# Subtest: oas/securityApplied: positief referentiegeval
+ok 49 - oas/securityApplied: positief referentiegeval
+  ---
+  duration_ms: 0.545221
+  type: 'test'
+  ...
+# Subtest: oas/securityScheme: positief referentiegeval
+ok 50 - oas/securityScheme: positief referentiegeval
+  ---
+  duration_ms: 0.433083
+  type: 'test'
+  ...
+# Subtest: oas/securityReferences: positief referentiegeval
+ok 51 - oas/securityReferences: positief referentiegeval
+  ---
+  duration_ms: 0.314027
+  type: 'test'
+  ...
+# Subtest: oas/oauthUrls: positief referentiegeval
+ok 52 - oas/oauthUrls: positief referentiegeval
+  ---
+  duration_ms: 0.520233
+  type: 'test'
+  ...
+# Subtest: oas/oauthFlow: positief referentiegeval
+ok 53 - oas/oauthFlow: positief referentiegeval
+  ---
+  duration_ms: 0.305263
+  type: 'test'
+  ...
+# Subtest: oas/queryCredentials: positief referentiegeval
+ok 54 - oas/queryCredentials: positief referentiegeval
+  ---
+  duration_ms: 0.611959
+  type: 'test'
+  ...
+# Subtest: oas/parameterPurpose: positief referentiegeval
+ok 55 - oas/parameterPurpose: positief referentiegeval
+  ---
+  duration_ms: 0.356059
+  type: 'test'
+  ...
+# Subtest: oas/underscoreAdvice: positief referentiegeval
+ok 56 - oas/underscoreAdvice: positief referentiegeval
+  ---
+  duration_ms: 0.339695
+  type: 'test'
+  ...
+# Subtest: oas/pagination: positief referentiegeval
+ok 57 - oas/pagination: positief referentiegeval
+  ---
+  duration_ms: 0.595805
+  type: 'test'
+  ...
+# Subtest: oas/paginationAdvice: positief referentiegeval
+ok 58 - oas/paginationAdvice: positief referentiegeval
+  ---
+  duration_ms: 0.330421
+  type: 'test'
+  ...
+# Subtest: oas/paginationReview: positief referentiegeval
+ok 59 - oas/paginationReview: positief referentiegeval
+  ---
+  duration_ms: 0.373425
+  type: 'test'
+  ...
+# Subtest: oas/foreignKey: positief referentiegeval
+ok 60 - oas/foreignKey: positief referentiegeval
+  ---
+  duration_ms: 0.303731
+  type: 'test'
+  ...
+# Subtest: oas/headers: positief referentiegeval
+ok 61 - oas/headers: positief referentiegeval
+  ---
+  duration_ms: 0.353956
+  type: 'test'
+  ...
+# Subtest: oas/qosReview: positief referentiegeval
+ok 62 - oas/qosReview: positief referentiegeval
+  ---
+  duration_ms: 0.314217
+  type: 'test'
+  ...
+# Subtest: oas/extensionConfig: positief referentiegeval
+ok 63 - oas/extensionConfig: positief referentiegeval
+  ---
+  duration_ms: 1.146113
+  type: 'test'
+  ...
+# Subtest: oas/majorVersion: positief referentiegeval
+ok 64 - oas/majorVersion: positief referentiegeval
+  ---
+  duration_ms: 0.906958
+  type: 'test'
+  ...
+# Subtest: oas/serverHttps: positief referentiegeval
+ok 65 - oas/serverHttps: positief referentiegeval
+  ---
+  duration_ms: 0.563958
+  type: 'test'
+  ...
+# Subtest: central/authority: positief referentiegeval
+ok 66 - central/authority: positief referentiegeval
+  ---
+  duration_ms: 0.772909
+  type: 'test'
+  ...
+# Subtest: central/hierarchy: positief referentiegeval
+ok 67 - central/hierarchy: positief referentiegeval
+  ---
+  duration_ms: 0.420004
+  type: 'test'
+  ...
+# Subtest: central/case: positief referentiegeval
+ok 68 - central/case: positief referentiegeval
+  ---
+  duration_ms: 0.721242
+  type: 'test'
+  ...
+# Subtest: central/variables: positief referentiegeval
+ok 69 - central/variables: positief referentiegeval
+  ---
+  duration_ms: 0.48421
+  type: 'test'
+  ...
+# Subtest: Catalogus: iedere functiecontrole precies één keer geregistreerd
+ok 70 - Catalogus: iedere functiecontrole precies één keer geregistreerd
+  ---
+  duration_ms: 0.273516
+  type: 'test'
+  ...
+# Subtest: events/document: geen eventschema als instantie
+ok 71 - events/document: geen eventschema als instantie
+  ---
+  duration_ms: 0.431902
+  type: 'test'
+  ...
+# Subtest: events/document: data_base64 buiten profiel
+ok 72 - events/document: data_base64 buiten profiel
+  ---
+  duration_ms: 0.094701
+  type: 'test'
+  ...
+# Subtest: events/specversion: ontbrekende versie
+ok 73 - events/specversion: ontbrekende versie
+  ---
+  duration_ms: 0.224914
+  type: 'test'
+  ...
+# Subtest: events/specversion: verkeerde versie
+ok 74 - events/specversion: verkeerde versie
+  ---
+  duration_ms: 0.091055
+  type: 'test'
+  ...
+# Subtest: events/id: lege ID
+ok 75 - events/id: lege ID
+  ---
+  duration_ms: 0.065857
+  type: 'test'
+  ...
+# Subtest: events/id: null ID
+ok 76 - events/id: null ID
+  ---
+  duration_ms: 0.111996
+  type: 'test'
+  ...
+# Subtest: events/uuid: UUID is aanbeveling
+ok 77 - events/uuid: UUID is aanbeveling
+  ---
+  duration_ms: 0.270803
+  type: 'test'
+  ...
+# Subtest: events/source: URL is geen samengesteld URN
+ok 78 - events/source: URL is geen samengesteld URN
+  ---
+  duration_ms: 0.146518
+  type: 'test'
+  ...
+# Subtest: events/source: ontbrekend systeem
+ok 79 - events/source: ontbrekend systeem
+  ---
+  duration_ms: 0.084546
+  type: 'test'
+  ...
+# Subtest: events/sourceIdentifier: te weinig EAN13 cijfers
+ok 80 - events/sourceIdentifier: te weinig EAN13 cijfers
+  ---
+  duration_ms: 0.131716
+  type: 'test'
+  ...
+# Subtest: events/sourceIdentifier: geen verzonnen KVK registercontrole
+ok 81 - events/sourceIdentifier: geen verzonnen KVK registercontrole
+  ---
+  duration_ms: 0.070795
+  type: 'test'
+  ...
+# Subtest: events/type: geen driedelige typering
+ok 82 - events/type: geen driedelige typering
+  ---
+  duration_ms: 0.093729
+  type: 'test'
+  ...
+# Subtest: events/pastTense: opdracht in plaats van gebeurtenis
+ok 83 - events/pastTense: opdracht in plaats van gebeurtenis
+  ---
+  duration_ms: 0.109843
+  type: 'test'
+  ...
+# Subtest: events/pastTense: onregelmatige verleden tijd
+ok 84 - events/pastTense: onregelmatige verleden tijd
+  ---
+  duration_ms: 0.150304
+  type: 'test'
+  ...
+# Subtest: events/pastTense: specifieke woordenlijst
+ok 85 - events/pastTense: specifieke woordenlijst
+  ---
+  duration_ms: 0.077906
+  type: 'test'
+  ...
+# Subtest: events/contentType: verplicht bij payload
+ok 86 - events/contentType: verplicht bij payload
+  ---
+  duration_ms: 0.066269
+  type: 'test'
+  ...
+# Subtest: events/contentType: geen wildcard MIME type
+ok 87 - events/contentType: geen wildcard MIME type
+  ---
+  duration_ms: 0.070956
+  type: 'test'
+  ...
+# Subtest: events/contentType: headerinjectie niet toegestaan
+ok 88 - events/contentType: headerinjectie niet toegestaan
+  ---
+  duration_ms: 0.057445
+  type: 'test'
+  ...
+# Subtest: events/contentType: MIME parameters
+ok 89 - events/contentType: MIME parameters
+  ---
+  duration_ms: 0.15462
+  type: 'test'
+  ...
+# Subtest: events/time: milliseconden onvoldoende
+ok 90 - events/time: milliseconden onvoldoende
+  ---
+  duration_ms: 0.08803
+  type: 'test'
+  ...
+# Subtest: events/time: niet bestaande datum
+ok 91 - events/time: niet bestaande datum
+  ---
+  duration_ms: 0.135011
+  type: 'test'
+  ...
+# Subtest: events/time: UTC offset is niet Z
+ok 92 - events/time: UTC offset is niet Z
+  ---
+  duration_ms: 0.117815
+  type: 'test'
+  ...
+# Subtest: events/time: schrikkeljaar
+ok 93 - events/time: schrikkeljaar
+  ---
+  duration_ms: 0.068372
+  type: 'test'
+  ...
+# Subtest: events/dataVersion: payload zonder versie
+ok 94 - events/dataVersion: payload zonder versie
+  ---
+  duration_ms: 0.056884
+  type: 'test'
+  ...
+# Subtest: events/dataVersion: numerieke versie ongeldig
+ok 95 - events/dataVersion: numerieke versie ongeldig
+  ---
+  duration_ms: 0.056804
+  type: 'test'
+  ...
+# Subtest: events/dataVersion: voorloopnul ongeldig
+ok 96 - events/dataVersion: voorloopnul ongeldig
+  ---
+  duration_ms: 0.051627
+  type: 'test'
+  ...
+# Subtest: events/dataVersion: SemVer prerelease en build
+ok 97 - events/dataVersion: SemVer prerelease en build
+  ---
+  duration_ms: 0.424541
+  type: 'test'
+  ...
+# Subtest: events/data: leeg object
+ok 98 - events/data: leeg object
+  ---
+  duration_ms: 0.141911
+  type: 'test'
+  ...
+# Subtest: events/data: null is wel aanwezige data
+ok 99 - events/data: null is wel aanwezige data
+  ---
+  duration_ms: 0.673421
+  type: 'test'
+  ...
+# Subtest: events/data: array buiten gekozen ID08 interpretatie
+ok 100 - events/data: array buiten gekozen ID08 interpretatie
+  ---
+  duration_ms: 0.112527
+  type: 'test'
+  ...
+# Subtest: events/encoding: XML object in JSON envelope
+ok 101 - events/encoding: XML object in JSON envelope
+  ---
+  duration_ms: 0.119548
+  type: 'test'
+  ...
+# Subtest: events/sizeLimit: bytes boven grens
+ok 102 - events/sizeLimit: bytes boven grens
+  ---
+  duration_ms: 1.330707
+  type: 'test'
+  ...
+# Subtest: events/sizeAdvice: boven adviesgrens
+ok 103 - events/sizeAdvice: boven adviesgrens
+  ---
+  duration_ms: 0.337632
+  type: 'test'
+  ...
+# Subtest: events/sizeAdvice: boven harde grens niet ook advies herhalen
+ok 104 - events/sizeAdvice: boven harde grens niet ook advies herhalen
+  ---
+  duration_ms: 1.18448
+  type: 'test'
+  ...
+# Subtest: events/contextNames: hoofdletters
+ok 105 - events/contextNames: hoofdletters
+  ---
+  duration_ms: 0.156102
+  type: 'test'
+  ...
+# Subtest: events/contextNames: lange naam
+ok 106 - events/contextNames: lange naam
+  ---
+  duration_ms: 0.107249
+  type: 'test'
+  ...
+# Subtest: events/contextNames: twintig tekens
+ok 107 - events/contextNames: twintig tekens
+  ---
+  duration_ms: 0.096684
+  type: 'test'
+  ...
+# Subtest: events/payloadNames: geneste naamfout
+ok 108 - events/payloadNames: geneste naamfout
+  ---
+  duration_ms: 0.259506
+  type: 'test'
+  ...
+# Subtest: events/payloadNames: specifieke modeluitzondering
+ok 109 - events/payloadNames: specifieke modeluitzondering
+  ---
+  duration_ms: 0.232615
+  type: 'test'
+  ...
+# Subtest: events/subject: verkeerd datatype
+ok 110 - events/subject: verkeerd datatype
+  ---
+  duration_ms: 0.097745
+  type: 'test'
+  ...
+# Subtest: events/subject: null betekent unset in CE JSON
+ok 111 - events/subject: null betekent unset in CE JSON
+  ---
+  duration_ms: 0.155471
+  type: 'test'
+  ...
+# Subtest: events/dataref: relatieve verwijzing
+ok 112 - events/dataref: relatieve verwijzing
+  ---
+  duration_ms: 0.110865
+  type: 'test'
+  ...
+# Subtest: events/dataref: credentials in verwijzing
+ok 113 - events/dataref: credentials in verwijzing
+  ---
+  duration_ms: 0.123453
+  type: 'test'
+  ...
+# Subtest: events/dataref: data en dataref samen niet verboden
+ok 114 - events/dataref: data en dataref samen niet verboden
+  ---
+  duration_ms: 0.102031
+  type: 'test'
+  ...
+# Subtest: events/dataSchema: relatief schema
+ok 115 - events/dataSchema: relatief schema
+  ---
+  duration_ms: 0.094731
+  type: 'test'
+  ...
+# Subtest: events/contextValues: object als generieke contextuitbreiding
+ok 116 - events/contextValues: object als generieke contextuitbreiding
+  ---
+  duration_ms: 0.126117
+  type: 'test'
+  ...
+# Subtest: events/contextValues: integer buiten int32
+ok 117 - events/contextValues: integer buiten int32
+  ---
+  duration_ms: 0.106768
+  type: 'test'
+  ...
+# Subtest: events/contextValues: control character
+ok 118 - events/contextValues: control character
+  ---
+  duration_ms: 0.160248
+  type: 'test'
+  ...
+# Subtest: events/contextValues: valide unicodepaar
+ok 119 - events/contextValues: valide unicodepaar
+  ---
+  duration_ms: 0.112347
+  type: 'test'
+  ...
+# Subtest: events/contextValues: null extensie is unset
+ok 120 - events/contextValues: null extensie is unset
+  ---
+  duration_ms: 0.098145
+  type: 'test'
+  ...
+# Subtest: alle eventregels: event-valid.json
+ok 121 - alle eventregels: event-valid.json
+  ---
+  duration_ms: 0.848681
+  type: 'test'
+  ...
+# Subtest: alle eventregels: event-thin.json
+ok 122 - alle eventregels: event-thin.json
+  ---
+  duration_ms: 0.438782
+  type: 'test'
+  ...
+# Subtest: notificatie zonder data en zonder dataref toegestaan
+ok 123 - notificatie zonder data en zonder dataref toegestaan
+  ---
+  duration_ms: 0.238334
+  type: 'test'
+  ...
+# Subtest: oas/document: andere OAS versie niet stil overslaan
+ok 124 - oas/document: andere OAS versie niet stil overslaan
+  ---
+  duration_ms: 0.701523
+  type: 'test'
+  ...
+# Subtest: oas/info: leeg contactobject
+ok 125 - oas/info: leeg contactobject
+  ---
+  duration_ms: 0.524379
+  type: 'test'
+  ...
+# Subtest: oas/info: ontbrekende licentie
+ok 126 - oas/info: ontbrekende licentie
+  ---
+  duration_ms: 0.482898
+  type: 'test'
+  ...
+# Subtest: oas/version: geen semver
+ok 127 - oas/version: geen semver
+  ---
+  duration_ms: 0.386173
+  type: 'test'
+  ...
+# Subtest: oas/releaseDate: onmogelijke kalenderdatum
+ok 128 - oas/releaseDate: onmogelijke kalenderdatum
+  ---
+  duration_ms: 0.306756
+  type: 'test'
+  ...
+# Subtest: oas/operationKind: ongeldige classificatie
+ok 129 - oas/operationKind: ongeldige classificatie
+  ---
+  duration_ms: 0.684337
+  type: 'test'
+  ...
+# Subtest: oas/statusCodes: GET search vraagt 422
+ok 130 - oas/statusCodes: GET search vraagt 422
+  ---
+  duration_ms: 0.462668
+  type: 'test'
+  ...
+# Subtest: oas/statusCodes: HEAD minimum 204
+ok 131 - oas/statusCodes: HEAD minimum 204
+  ---
+  duration_ms: 0.559972
+  type: 'test'
+  ...
+# Subtest: oas/statusCodes: 400 niet verplicht
+ok 132 - oas/statusCodes: 400 niet verplicht
+  ---
+  duration_ms: 0.350871
+  type: 'test'
+  ...
+# Subtest: oas/statusCodes: POST search gebruikt 200 niet 201
+ok 133 - oas/statusCodes: POST search gebruikt 200 niet 201
+  ---
+  duration_ms: 0.381427
+  type: 'test'
+  ...
+# Subtest: oas/getBody: GET body
+ok 134 - oas/getBody: GET body
+  ---
+  duration_ms: 0.344652
+  type: 'test'
+  ...
+# Subtest: oas/noContent: 204 content
+ok 135 - oas/noContent: 204 content
+  ---
+  duration_ms: 0.453904
+  type: 'test'
+  ...
+# Subtest: oas/noContent: HEAD error blijft bodyloos
+ok 136 - oas/noContent: HEAD error blijft bodyloos
+  ---
+  duration_ms: 0.414977
+  type: 'test'
+  ...
+# Subtest: oas/createdLocation: geen resourceverwijzing
+ok 137 - oas/createdLocation: geen resourceverwijzing
+  ---
+  duration_ms: 0.395437
+  type: 'test'
+  ...
+# Subtest: oas/createdLocation: case insensitive header
+ok 138 - oas/createdLocation: case insensitive header
+  ---
+  duration_ms: 0.4309
+  type: 'test'
+  ...
+# Subtest: oas/preconditions: 428 zonder 412
+ok 139 - oas/preconditions: 428 zonder 412
+  ---
+  duration_ms: 1.608339
+  type: 'test'
+  ...
+# Subtest: oas/preconditions: verplicht If-Match zonder 428
+ok 140 - oas/preconditions: verplicht If-Match zonder 428
+  ---
+  duration_ms: 0.4377
+  type: 'test'
+  ...
+# Subtest: oas/mutationReview: beoordeel resource in mutatieresponse
+ok 141 - oas/mutationReview: beoordeel resource in mutatieresponse
+  ---
+  duration_ms: 0.355719
+  type: 'test'
+  ...
+# Subtest: oas/mutationReview: beoordeeld statusrecord
+ok 142 - oas/mutationReview: beoordeeld statusrecord
+  ---
+  duration_ms: 0.372684
+  type: 'test'
+  ...
+# Subtest: oas/bodySchema: body zonder schema
+ok 143 - oas/bodySchema: body zonder schema
+  ---
+  duration_ms: 0.549226
+  type: 'test'
+  ...
+# Subtest: oas/bodySchema: lege Merge Patch schema geldig
+ok 144 - oas/bodySchema: lege Merge Patch schema geldig
+  ---
+  duration_ms: 0.554234
+  type: 'test'
+  ...
+# Subtest: oas/problemMedia: fout zonder problem media
+ok 145 - oas/problemMedia: fout zonder problem media
+  ---
+  duration_ms: 0.430509
+  type: 'test'
+  ...
+# Subtest: oas/problemFields: properties alleen is onvoldoende
+ok 146 - oas/problemFields: properties alleen is onvoldoende
+  ---
+  duration_ms: 0.608794
+  type: 'test'
+  ...
+# Subtest: oas/problemFields: status als string
+ok 147 - oas/problemFields: status als string
+  ---
+  duration_ms: 0.639981
+  type: 'test'
+  ...
+# Subtest: oas/problemFields: statusschema sluit response uit
+ok 148 - oas/problemFields: statusschema sluit response uit
+  ---
+  duration_ms: 1.889918
+  type: 'test'
+  ...
+# Subtest: oas/problemExamples: voorbeeld hoort bij andere HTTP status
+ok 149 - oas/problemExamples: voorbeeld hoort bij andere HTTP status
+  ---
+  duration_ms: 0.596066
+  type: 'test'
+  ...
+# Subtest: oas/problemLeak: stacktrace schema
+ok 150 - oas/problemLeak: stacktrace schema
+  ---
+  duration_ms: 0.702283
+  type: 'test'
+  ...
+# Subtest: oas/defaultReview: default vraagt review
+ok 151 - oas/defaultReview: default vraagt review
+  ---
+  duration_ms: 0.372624
+  type: 'test'
+  ...
+# Subtest: oas/stringMin: ontbrekende minimumlengte
+ok 152 - oas/stringMin: ontbrekende minimumlengte
+  ---
+  duration_ms: 2.346056
+  type: 'test'
+  ...
+# Subtest: oas/stringMin: minLength nul
+ok 153 - oas/stringMin: minLength nul
+  ---
+  duration_ms: 1.500029
+  type: 'test'
+  ...
+# Subtest: oas/stringMax: ontbrekende maximumlengte
+ok 154 - oas/stringMax: ontbrekende maximumlengte
+  ---
+  duration_ms: 1.916818
+  type: 'test'
+  ...
+# Subtest: oas/stringBounds: grenzen in verkeerde volgorde
+ok 155 - oas/stringBounds: grenzen in verkeerde volgorde
+  ---
+  duration_ms: 2.442509
+  type: 'test'
+  ...
+# Subtest: oas/stringBounds: niet standaard length
+ok 156 - oas/stringBounds: niet standaard length
+  ---
+  duration_ms: 1.303748
+  type: 'test'
+  ...
+# Subtest: oas/stringMin: nullable type-unie
+ok 157 - oas/stringMin: nullable type-unie
+  ---
+  duration_ms: 1.635811
+  type: 'test'
+  ...
+# Subtest: oas/stringMin: allOf lengte verdeeld over takken
+ok 158 - oas/stringMin: allOf lengte verdeeld over takken
+  ---
+  duration_ms: 2.852488
+  type: 'test'
+  ...
+# Subtest: oas/dateExamples: onmogelijke datum
+ok 159 - oas/dateExamples: onmogelijke datum
+  ---
+  duration_ms: 1.516013
+  type: 'test'
+  ...
+# Subtest: oas/dateAdvice: UTC advies geen harde formatfout
+ok 160 - oas/dateAdvice: UTC advies geen harde formatfout
+  ---
+  duration_ms: 1.295455
+  type: 'test'
+  ...
+# Subtest: oas/dateExamples: offset is geldige ondubbelzinnige tijd
+ok 161 - oas/dateExamples: offset is geldige ondubbelzinnige tijd
+  ---
+  duration_ms: 1.355544
+  type: 'test'
+  ...
+# Subtest: oas/propertyNames: snake case property
+ok 162 - oas/propertyNames: snake case property
+  ---
+  duration_ms: 1.721048
+  type: 'test'
+  ...
+# Subtest: oas/propertyNames: referentiemodel heeft voorrang
+ok 163 - oas/propertyNames: referentiemodel heeft voorrang
+  ---
+  duration_ms: 1.765293
+  type: 'test'
+  ...
+# Subtest: oas/propertyNames: HAL gereserveerde leden
+ok 164 - oas/propertyNames: HAL gereserveerde leden
+  ---
+  duration_ms: 0.919856
+  type: 'test'
+  ...
+# Subtest: oas/enumCase: enum in kleine letters
+ok 165 - oas/enumCase: enum in kleine letters
+  ---
+  duration_ms: 1.229727
+  type: 'test'
+  ...
+# Subtest: oas/enumCase: internationale standaard
+ok 166 - oas/enumCase: internationale standaard
+  ---
+  duration_ms: 0.873377
+  type: 'test'
+  ...
+# Subtest: oas/enumDynamic: expliciet dynamische enum
+ok 167 - oas/enumDynamic: expliciet dynamische enum
+  ---
+  duration_ms: 0.973406
+  type: 'test'
+  ...
+# Subtest: oas/enumReview: niet geclassificeerde enum
+ok 168 - oas/enumReview: niet geclassificeerde enum
+  ---
+  duration_ms: 1.340481
+  type: 'test'
+  ...
+# Subtest: oas/composition: geneste oneOf
+ok 169 - oas/composition: geneste oneOf
+  ---
+  duration_ms: 1.661849
+  type: 'test'
+  ...
+# Subtest: oas/composition: payloadvoorbeeld met allOf is geen schema
+ok 170 - oas/composition: payloadvoorbeeld met allOf is geen schema
+  ---
+  duration_ms: 1.472018
+  type: 'test'
+  ...
+# Subtest: oas/securityApplied: lege security overschrijft root
+ok 171 - oas/securityApplied: lege security overschrijft root
+  ---
+  duration_ms: 1.047987
+  type: 'test'
+  ...
+# Subtest: oas/securityApplied: anonieme OR route
+ok 172 - oas/securityApplied: anonieme OR route
+  ---
+  duration_ms: 0.405963
+  type: 'test'
+  ...
+# Subtest: oas/securityApplied: beveiliging uitsluitend per operatie
+ok 173 - oas/securityApplied: beveiliging uitsluitend per operatie
+  ---
+  duration_ms: 0.388788
+  type: 'test'
+  ...
+# Subtest: oas/securityScheme: API key alleen
+ok 174 - oas/securityScheme: API key alleen
+  ---
+  duration_ms: 0.365964
+  type: 'test'
+  ...
+# Subtest: oas/securityReferences: ontbrekend schema
+ok 175 - oas/securityReferences: ontbrekend schema
+  ---
+  duration_ms: 0.338693
+  type: 'test'
+  ...
+# Subtest: oas/securityReferences: onbekende OAuth scope
+ok 176 - oas/securityReferences: onbekende OAuth scope
+  ---
+  duration_ms: 0.524419
+  type: 'test'
+  ...
+# Subtest: oas/oauthUrls: niet beveiligde discovery
+ok 177 - oas/oauthUrls: niet beveiligde discovery
+  ---
+  duration_ms: 0.440534
+  type: 'test'
+  ...
+# Subtest: oas/oauthFlow: password flow advies
+ok 178 - oas/oauthFlow: password flow advies
+  ---
+  duration_ms: 0.405282
+  type: 'test'
+  ...
+# Subtest: oas/queryCredentials: API key in query
+ok 179 - oas/queryCredentials: API key in query
+  ---
+  duration_ms: 0.345573
+  type: 'test'
+  ...
+# Subtest: oas/queryCredentials: access_token als queryparameter
+ok 180 - oas/queryCredentials: access_token als queryparameter
+  ---
+  duration_ms: 0.349619
+  type: 'test'
+  ...
+# Subtest: oas/parameterPurpose: verkeerde sorteerparameter
+ok 181 - oas/parameterPurpose: verkeerde sorteerparameter
+  ---
+  duration_ms: 0.946276
+  type: 'test'
+  ...
+# Subtest: oas/parameterPurpose: gewone businessparameter niet semantisch raden
+ok 182 - oas/parameterPurpose: gewone businessparameter niet semantisch raden
+  ---
+  duration_ms: 0.41722
+  type: 'test'
+  ...
+# Subtest: oas/underscoreAdvice: toegestane variant zonder underscore
+ok 183 - oas/underscoreAdvice: toegestane variant zonder underscore
+  ---
+  duration_ms: 0.347427
+  type: 'test'
+  ...
+# Subtest: oas/pagination: cursor verplicht
+ok 184 - oas/pagination: cursor verplicht
+  ---
+  duration_ms: 0.452903
+  type: 'test'
+  ...
+# Subtest: oas/pagination: nextCursor verplicht
+ok 185 - oas/pagination: nextCursor verplicht
+  ---
+  duration_ms: 1.50093
+  type: 'test'
+  ...
+# Subtest: oas/pagination: geen resultatenarray
+ok 186 - oas/pagination: geen resultatenarray
+  ---
+  duration_ms: 0.458641
+  type: 'test'
+  ...
+# Subtest: oas/paginationAdvice: afwijkende standaardlimiet
+ok 187 - oas/paginationAdvice: afwijkende standaardlimiet
+  ---
+  duration_ms: 0.42438
+  type: 'test'
+  ...
+# Subtest: oas/paginationReview: bestaande uitzondering vraagt review
+ok 188 - oas/paginationReview: bestaande uitzondering vraagt review
+  ---
+  duration_ms: 0.486613
+  type: 'test'
+  ...
+# Subtest: oas/pagination: geen onterechte afwijzing legacy
+ok 189 - oas/pagination: geen onterechte afwijzing legacy
+  ---
+  duration_ms: 0.467975
+  type: 'test'
+  ...
+# Subtest: oas/foreignKey: externe sleutel in pad
+ok 190 - oas/foreignKey: externe sleutel in pad
+  ---
+  duration_ms: 0.530648
+  type: 'test'
+  ...
+# Subtest: oas/headers: EAN13 mag geen getal zijn
+ok 191 - oas/headers: EAN13 mag geen getal zijn
+  ---
+  duration_ms: 0.635854
+  type: 'test'
+  ...
+# Subtest: oas/qosReview: verwijzing ontbreekt
+ok 192 - oas/qosReview: verwijzing ontbreekt
+  ---
+  duration_ms: 0.349469
+  type: 'test'
+  ...
+# Subtest: oas/extensionConfig: ongeldige naamuitzondering
+ok 193 - oas/extensionConfig: ongeldige naamuitzondering
+  ---
+  duration_ms: 1.666657
+  type: 'test'
+  ...
+# Subtest: oas/majorVersion: URI versie wijkt af
+ok 194 - oas/majorVersion: URI versie wijkt af
+  ---
+  duration_ms: 0.512281
+  type: 'test'
+  ...
+# Subtest: oas/majorVersion: versie in path in plaats van servers
+ok 195 - oas/majorVersion: versie in path in plaats van servers
+  ---
+  duration_ms: 0.578279
+  type: 'test'
+  ...
+# Subtest: oas/majorVersion: pathitem overschrijft root server
+ok 196 - oas/majorVersion: pathitem overschrijft root server
+  ---
+  duration_ms: 0.466373
+  type: 'test'
+  ...
+# Subtest: oas/serverHttps: onveilig endpoint op operatieniveau
+ok 197 - oas/serverHttps: onveilig endpoint op operatieniveau
+  ---
+  duration_ms: 0.446824
+  type: 'test'
+  ...
+# Subtest: central/authority: verkeerde volgorde domein
+ok 198 - central/authority: verkeerde volgorde domein
+  ---
+  duration_ms: 0.58541
+  type: 'test'
+  ...
+# Subtest: central/authority: extern prd segment
+ok 199 - central/authority: extern prd segment
+  ---
+  duration_ms: 0.664688
+  type: 'test'
+  ...
+# Subtest: central/authority: acc omgeving
+ok 200 - central/authority: acc omgeving
+  ---
+  duration_ms: 0.43092
+  type: 'test'
+  ...
+# Subtest: central/hierarchy: te weinig contextniveaus
+ok 201 - central/hierarchy: te weinig contextniveaus
+  ---
+  duration_ms: 0.473935
+  type: 'test'
+  ...
+# Subtest: central/case: hoofdletter letterlijk segment
+ok 202 - central/case: hoofdletter letterlijk segment
+  ---
+  duration_ms: 0.411061
+  type: 'test'
+  ...
+# Subtest: central/variables: ongebegrensde servervariabele
+ok 203 - central/variables: ongebegrensde servervariabele
+  ---
+  duration_ms: 0.538339
+  type: 'test'
+  ...
+# Subtest: central/variables: volledig opgesomde servervariabele
+ok 204 - central/variables: volledig opgesomde servervariabele
+  ---
+  duration_ms: 0.479462
+  type: 'test'
+  ...
+# Subtest: Iedere zelfgeschreven controle heeft ook een negatief testgeval
+ok 205 - Iedere zelfgeschreven controle heeft ook een negatief testgeval
+  ---
+  duration_ms: 0.254037
+  type: 'test'
+  ...
+# Subtest: Onbekende functieopties geven een fout in plaats van stil slagen
+ok 206 - Onbekende functieopties geven een fout in plaats van stil slagen
+  ---
+  duration_ms: 0.372944
+  type: 'test'
+  ...
+# Subtest: SemVer regressies
+ok 207 - SemVer regressies
+  ---
+  duration_ms: 0.091135
+  type: 'test'
+  ...
+# Subtest: MIME parser parameters en ongeldige inputs
+ok 208 - MIME parser parameters en ongeldige inputs
+  ---
+  duration_ms: 0.075693
+  type: 'test'
+  ...
+# Subtest: Datumcontrole schrikkelregels
+ok 209 - Datumcontrole schrikkelregels
+  ---
+  duration_ms: 0.052488
+  type: 'test'
+  ...
+# Subtest: URI referenties versus absolute URI
+ok 210 - URI referenties versus absolute URI
+  ---
+  duration_ms: 0.06053
+  type: 'test'
+  ...
+# Subtest: UTF8 bytes tellen geen tekens
+ok 211 - UTF8 bytes tellen geen tekens
+  ---
+  duration_ms: 0.050785
+  type: 'test'
+  ...
+# Subtest: Grootte exact op en één byte over de grens
+ok 212 - Grootte exact op en één byte over de grens
+  ---
+  duration_ms: 2.085058
+  type: 'test'
+  ...
+# Subtest: Multibyte eventdata over de grens
+ok 213 - Multibyte eventdata over de grens
+  ---
+  duration_ms: 3.189249
+  type: 'test'
+  ...
+# Subtest: Expliciete overhead telt mee
+ok 214 - Expliciete overhead telt mee
+  ---
+  duration_ms: 0.19525
+  type: 'test'
+  ...
+# Subtest: Verkeerde grootteconfiguratie faalt expliciet
+ok 215 - Verkeerde grootteconfiguratie faalt expliciet
+  ---
+  duration_ms: 0.093128
+  type: 'test'
+  ...
+# Subtest: Circulaire opgeloste schema referentie termineert
+ok 216 - Circulaire opgeloste schema referentie termineert
+  ---
+  duration_ms: 3.254795
+  type: 'test'
+  ...
+# Subtest: Callbacks en webhooks vallen niet tussen de controles
+ok 217 - Callbacks en webhooks vallen niet tussen de controles
+  ---
+  duration_ms: 0.74655
+  type: 'test'
+  ...
+# Subtest: Herbruikbare requestbody schema gecontroleerd
+ok 218 - Herbruikbare requestbody schema gecontroleerd
+  ---
+  duration_ms: 3.715311
+  type: 'test'
+  ...
+# Subtest: Verwijzingen in voorbeelden niet als schema behandeld
+ok 219 - Verwijzingen in voorbeelden niet als schema behandeld
+  ---
+  duration_ms: 2.210174
+  type: 'test'
+  ...
+# Subtest: Server enum varianten allemaal opgehaald
+ok 220 - Server enum varianten allemaal opgehaald
+  ---
+  duration_ms: 0.160399
+  type: 'test'
+  ...
+# Subtest: Contextpath wordt doorgegeven
+ok 221 - Contextpath wordt doorgegeven
+  ---
+  duration_ms: 0.241639
+  type: 'test'
+  ...
+# Subtest: Functies veranderen het invoercontract niet
+ok 222 - Functies veranderen het invoercontract niet
+  ---
+  duration_ms: 12.426474
+  type: 'test'
+  ...
+# Subtest: Ongeldige documenttypen veroorzaken geen crash
+ok 223 - Ongeldige documenttypen veroorzaken geen crash
+  ---
+  duration_ms: 0.441146
+  type: 'test'
+  ...
+# Subtest: Bestandsgrootte: oorspronkelijke whitespace blijft meetellen
+ok 224 - Bestandsgrootte: oorspronkelijke whitespace blijft meetellen
+  ---
+  duration_ms: 0.224023
+  type: 'test'
+  ...
+# Subtest: Bestandsgrootte: UTF8 telt bytes, niet tekens
+ok 225 - Bestandsgrootte: UTF8 telt bytes, niet tekens
+  ---
+  duration_ms: 0.082252
+  type: 'test'
+  ...
+# Subtest: Bestandsgrootte: harde grens inclusief overhead
+ok 226 - Bestandsgrootte: harde grens inclusief overhead
+  ---
+  duration_ms: 0.098767
+  type: 'test'
+  ...
+# Subtest: Bestandsgrootte: adviesgrens is niet de harde grens
+ok 227 - Bestandsgrootte: adviesgrens is niet de harde grens
+  ---
+  duration_ms: 0.079899
+  type: 'test'
+  ...
+# Subtest: Bestandsgrootte: binaire kB interpretatie is configureerbaar
+ok 228 - Bestandsgrootte: binaire kB interpretatie is configureerbaar
+  ---
+  duration_ms: 0.071126
+  type: 'test'
+  ...
+# Subtest: Bestandsgrootte: ongeldige configuratie faalt
+ok 229 - Bestandsgrootte: ongeldige configuratie faalt
+  ---
+  duration_ms: 0.10046
+  type: 'test'
+  ...
+# Subtest: Bestandsgrootte: ongeldige UTF8 en JSON falen
+ok 230 - Bestandsgrootte: ongeldige UTF8 en JSON falen
+  ---
+  duration_ms: 0.338483
+  type: 'test'
+  ...
+# Subtest: Bestandsgrootte: commandoregel valideert invoer
+ok 231 - Bestandsgrootte: commandoregel valideert invoer
+  ---
+  duration_ms: 0.295078
+  type: 'test'
+  ...
+# Subtest: Gegenereerde YAML stemt overeen met de catalogus
+ok 232 - Gegenereerde YAML stemt overeen met de catalogus
+  ---
+  duration_ms: 62.421213
+  type: 'test'
+  ...
+# Subtest: oas/securityReferences: kapotte flow wordt door basisschema beoordeeld, geen crash
+ok 233 - oas/securityReferences: kapotte flow wordt door basisschema beoordeeld, geen crash
+  ---
+  duration_ms: 0.608384
+  type: 'test'
+  ...
+# Subtest: oas/noContent: 1XX range blijft bodyloos
+ok 234 - oas/noContent: 1XX range blijft bodyloos
+  ---
+  duration_ms: 0.601224
+  type: 'test'
+  ...
+1..234
+# tests 234
+# suites 0
+# pass 234
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 291.650408

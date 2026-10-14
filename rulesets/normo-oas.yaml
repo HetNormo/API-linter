@@ -1,0 +1,491 @@
+# Gegenereerd met npm run build:rulesets. Zie docs/BESLUITEN.md.
+extends:
+  - "spectral:oas"
+functionsDir: "./functions"
+functions:
+  - "normoOas"
+rules:
+  tool-oas-supported-version:
+    description: "ID23: Ondersteunde OpenAPI dialecten."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "document"
+  normo-api-info:
+    description: "ID07: Volledigheid van API metadata."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-07---definition-of-attributes-info-object"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "info"
+  normo-api-version:
+    description: "ID02: Semantisch versienummer."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-02---version-management"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "version"
+  normo-api-release-date:
+    description: "ID07: Bestaande kalenderdatum."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-07---definition-of-attributes-info-object"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "releaseDate"
+  tool-api-operation-kind:
+    description: "ID08: Geldigheid van lokale operationele classificatie."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-08---use-of-rest-operations"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "operationKind"
+  normo-api-status-codes:
+    description: "ID10: Expliciete minimale responscodes."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-10---http-status-codes"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "statusCodes"
+  normo-api-get-no-body:
+    description: "ID08: GET bevat geen requestbody."
+    documentationUrl: "https://hetnormo.github.io/API-standards/attachments/Use-of-HTTP-operations-for-RESTful-APIs.html#get-operation"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "getBody"
+  http-api-no-content:
+    description: "ID08: Bodyloze HTTP responses."
+    documentationUrl: "https://www.rfc-editor.org/rfc/rfc9110.html"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "noContent"
+  normo-api-created-reference:
+    description: "ID20: Verwijzing naar de aangemaakte resource."
+    documentationUrl: "https://hetnormo.github.io/API-standards/attachments/Use-of-HTTP-operations-for-RESTful-APIs.html#post-operation"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "createdLocation"
+  normo-api-precondition-responses:
+    description: "ID08: Samenhang tussen precondities en responses."
+    documentationUrl: "https://hetnormo.github.io/API-standards/attachments/Use-of-HTTP-operations-for-RESTful-APIs.html"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "preconditions"
+  normo-api-mutation-review:
+    description: "ID08: Beoordeling van mutatieresponses."
+    documentationUrl: "https://hetnormo.github.io/API-standards/attachments/Use-of-HTTP-operations-for-RESTful-APIs.html"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "mutationReview"
+  normo-api-body-schema:
+    description: "ID11: Aanwezig schema bij iedere beschreven body."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-11---use-of-json-schema-specification"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "bodySchema"
+  normo-api-problem-media:
+    description: "ID05: Media type van foutresponses."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-05---errors-and-exceptions"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "problemMedia"
+  normo-api-problem-fields:
+    description: "ID05: Verplichte Problem velden, typen en statuscompatibiliteit."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-05---errors-and-exceptions"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "problemFields"
+  normo-api-problem-examples:
+    description: "ID05: Problem voorbeeldwaarden en corresponderende HTTP status."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-05---errors-and-exceptions"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "problemExamples"
+  normo-api-error-detail-review:
+    description: "ID05: Signalering van technische foutdetails."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-05---errors-and-exceptions"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "problemLeak"
+  tool-api-default-review:
+    description: "ID05: Expliciete beoordeling van de default response."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-05---errors-and-exceptions"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "defaultReview"
+  normo-api-string-min-length:
+    description: "ID14: Minimale lengte van strings."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-14---defining-a-string"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "stringMin"
+  normo-api-string-max-length:
+    description: "ID14: Maximale lengte van strings."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-14---defining-a-string"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "stringMax"
+  normo-api-string-bounds:
+    description: "ID14: Consistente stringgrenzen en vaste lengtes."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-14---defining-a-string"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "stringBounds"
+  normo-api-date-examples:
+    description: "ID13: Geldigheid van schema datumvoorbeelden."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-13---defining-date-time-and-date-time"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "dateExamples"
+  normo-api-date-utc-advice:
+    description: "ID13: Aanbevolen UTC milliseconden."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-13---defining-date-time-and-date-time"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "dateAdvice"
+  normo-api-property-names:
+    description: "ID16: Veldnamen met referentiemodelvoorrang."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-16---defining-field-names"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "propertyNames"
+  normo-api-enum-case:
+    description: "ID21: Enumnaamgeving en internationale uitzonderingen."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-21---enumerations"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "enumCase"
+  normo-api-no-dynamic-enum:
+    description: "ID21: Afwijzen van expliciet dynamische enums."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-21---enumerations"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "enumDynamic"
+  normo-api-enum-review:
+    description: "ID21: Beoordeling van veranderlijkheid van enums."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-21---enumerations"
+    message: "{{error}}"
+    severity: info
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "enumReview"
+  normo-api-schema-composition:
+    description: "ID24: Geneste compositieconstructies."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-24---use-of-xxxof-constructs"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "composition"
+  profile-api-effective-security:
+    description: "ID15: Effectieve authenticatie zonder anonieme route."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-15---authorization"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "securityApplied"
+  normo-api-oauth-scheme:
+    description: "ID15: OAuth2 of OpenID Connect per toegangsroute."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-15---authorization"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "securityScheme"
+  oas-api-security-references:
+    description: "ID15: Security verwijzingen en OAuth scopes."
+    documentationUrl: "https://spec.openapis.org/oas/v3.1.0.html#security-requirement-object"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "securityReferences"
+  profile-api-oauth-https:
+    description: "ID15: HTTPS voor OAuth en discovery URLs."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-15---authorization"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "oauthUrls"
+  normo-api-oauth-flow-advice:
+    description: "ID15: Aanbevolen OAuth flows."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-15---authorization"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "oauthFlow"
+  profile-api-no-query-credentials:
+    description: "ID15: Geen expliciete URL credentials."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-15---authorization"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "queryCredentials"
+  normo-api-parameter-purpose:
+    description: "ID03/04/18/19: Naamgeving van semantisch geclassificeerde queryparameters."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "parameterPurpose"
+  normo-api-query-underscore-advice:
+    description: "ID03/04: Voorkeur voor underscorevariant."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/"
+    message: "{{error}}"
+    severity: info
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "underscoreAdvice"
+  normo-api-cursor-contract:
+    description: "ID26: Contract voor herkende cursorpaginering."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-26---use-encoded-cursor-paging"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "pagination"
+  normo-api-cursor-default-advice:
+    description: "ID26: Aanbevolen standaardlimiet."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-26---use-encoded-cursor-paging"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "paginationAdvice"
+  normo-api-pagination-review:
+    description: "ID26: Herkennen en beoordelen van bestaande paginering."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-26---use-encoded-cursor-paging"
+    message: "{{error}}"
+    severity: warn
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "paginationReview"
+  normo-api-foreign-key-query:
+    description: "ID27: Zoeken via een geclassificeerde externe sleutel."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-27---use-simple-search-to-retrieve-a-resource-via-a-foreign-key"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "foreignKey"
+  normo-api-sender-header:
+    description: "ID20: Vorm van een gedocumenteerde afzenderidentificatie."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-20---http-headers"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "headers"
+  normo-api-qos-review:
+    description: "ID12: QoS documentatie en reviewbewijs."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-12---quality-of-service-specification"
+    message: "{{error}}"
+    severity: info
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "qosReview"
+  tool-api-extension-config:
+    description: "Lokale annotaties: Geldigheid van interpretatieannotaties."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "extensionConfig"
+  normo-api-uri-major:
+    description: "ID02: Samenhang tussen effectieve URL en API versie."
+    documentationUrl: "https://hetnormo.github.io/API-standards/api-design-rules/#id-02---version-management"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "majorVersion"
+  profile-api-server-https:
+    description: "HTTPS: HTTPS in effectieve endpoint URLs."
+    documentationUrl: "https://hetnormo.github.io/API-standards/uri-conventions/#protocol-component"
+    message: "{{error}}"
+    severity: error
+    given: "$"
+    resolved: true
+    then:
+      function: normoOas
+      functionOptions:
+        check: "serverHttps"

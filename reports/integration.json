@@ -1,0 +1,319 @@
+{
+  "runner": "Spectral CLI integration",
+  "node": "v24.19.0",
+  "executedAt": "2026-10-14T09:22:26.170Z",
+  "cases": [
+    {
+      "name": "event JSON",
+      "passed": true,
+      "exitCode": 0,
+      "errors": 0,
+      "findings": 0,
+      "expectedCodes": [],
+      "diagnostics": [],
+      "stderr": ""
+    },
+    {
+      "name": "event zonder payload",
+      "passed": true,
+      "exitCode": 0,
+      "errors": 0,
+      "findings": 0,
+      "expectedCodes": [],
+      "diagnostics": [],
+      "stderr": ""
+    },
+    {
+      "name": "OpenAPI JSON",
+      "passed": true,
+      "exitCode": 0,
+      "errors": 0,
+      "findings": 0,
+      "expectedCodes": [],
+      "diagnostics": [],
+      "stderr": ""
+    },
+    {
+      "name": "OpenAPI YAML",
+      "passed": true,
+      "exitCode": 0,
+      "errors": 0,
+      "findings": 0,
+      "expectedCodes": [],
+      "diagnostics": [],
+      "stderr": ""
+    },
+    {
+      "name": "OpenAPI componentreferenties",
+      "passed": true,
+      "exitCode": 0,
+      "errors": 0,
+      "findings": 0,
+      "expectedCodes": [],
+      "diagnostics": [],
+      "stderr": ""
+    },
+    {
+      "name": "centrale URI",
+      "passed": true,
+      "exitCode": 0,
+      "errors": 0,
+      "findings": 0,
+      "expectedCodes": [],
+      "diagnostics": [],
+      "stderr": ""
+    },
+    {
+      "name": "ongeldig event",
+      "passed": true,
+      "exitCode": 1,
+      "errors": 4,
+      "findings": 4,
+      "expectedCodes": [
+        "normo-event-time"
+      ],
+      "diagnostics": [
+        {
+          "code": "normo-event-source-ean13",
+          "path": [
+            "source"
+          ],
+          "message": "De ean13 identificatie telt precies dertien cijfers; deze controle verifieert geen register of controlecijfer.",
+          "severity": 0,
+          "range": {
+            "start": {
+              "line": 3,
+              "character": 12
+            },
+            "end": {
+              "line": 3,
+              "character": 37
+            }
+          },
+          "source": "<temporary>/event-invalid.json"
+        },
+        {
+          "code": "normo-event-time",
+          "path": [
+            "time"
+          ],
+          "message": "Gebruik een geldige UTC datum en tijd met exact zes fractiecijfers: yyyy-mm-ddThh:mm:ss.ffffffZ.",
+          "severity": 0,
+          "range": {
+            "start": {
+              "line": 5,
+              "character": 10
+            },
+            "end": {
+              "line": 5,
+              "character": 36
+            }
+          },
+          "source": "<temporary>/event-invalid.json"
+        },
+        {
+          "code": "normo-event-data-version",
+          "path": [
+            "dataversion"
+          ],
+          "message": "Gebruik SemVer major.minor.patch, eventueel met prerelease en build metadata.",
+          "severity": 0,
+          "range": {
+            "start": {
+              "line": 8,
+              "character": 17
+            },
+            "end": {
+              "line": 8,
+              "character": 23
+            }
+          },
+          "source": "<temporary>/event-invalid.json"
+        },
+        {
+          "code": "normo-event-payload-names",
+          "path": [
+            "data",
+            "Meter_number"
+          ],
+          "message": "Gebruik camelCase voor payloadvelden of leg een specifiek referentiemodel vast in de rulesetconfiguratie.",
+          "severity": 0,
+          "range": {
+            "start": {
+              "line": 17,
+              "character": 20
+            },
+            "end": {
+              "line": 17,
+              "character": 23
+            }
+          },
+          "source": "<temporary>/event-invalid.json"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "name": "ongeldige API",
+      "passed": true,
+      "exitCode": 1,
+      "errors": 3,
+      "findings": 3,
+      "expectedCodes": [
+        "profile-api-effective-security"
+      ],
+      "diagnostics": [
+        {
+          "code": "normo-api-version",
+          "path": [
+            "info",
+            "version"
+          ],
+          "message": "Gebruik SemVer major.minor.patch, eventueel met prerelease en build metadata.",
+          "severity": 0,
+          "range": {
+            "start": {
+              "line": 14,
+              "character": 15
+            },
+            "end": {
+              "line": 14,
+              "character": 19
+            }
+          },
+          "source": "<temporary>/api-invalid.json"
+        },
+        {
+          "code": "normo-api-status-codes",
+          "path": [
+            "paths",
+            "/market-agreements",
+            "get",
+            "responses"
+          ],
+          "message": "ID10 minimumset ontbreekt: 422. Een default of statuscoderange vervangt in dit profiel de expliciete minimumcodes niet.",
+          "severity": 0,
+          "range": {
+            "start": {
+              "line": 51,
+              "character": 20
+            },
+            "end": {
+              "line": 298,
+              "character": 31
+            }
+          },
+          "source": "<temporary>/api-invalid.json"
+        },
+        {
+          "code": "profile-api-effective-security",
+          "path": [
+            "paths",
+            "/market-agreements",
+            "get",
+            "security"
+          ],
+          "message": "Deze operatie heeft een anonieme toegangsroute of geen effectief security requirement. Operatieniveau overschrijft globale security.",
+          "severity": 0,
+          "range": {
+            "start": {
+              "line": 330,
+              "character": 19
+            },
+            "end": {
+              "line": 330,
+              "character": 22
+            }
+          },
+          "source": "<temporary>/api-invalid.json"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "name": "niet opgeloste referentie",
+      "passed": true,
+      "exitCode": 1,
+      "errors": 3,
+      "findings": 3,
+      "expectedCodes": [
+        "invalid-ref"
+      ],
+      "diagnostics": [
+        {
+          "code": "normo-api-cursor-contract",
+          "path": [
+            "components",
+            "schemas"
+          ],
+          "message": "Documenteer nextCursor als optionele string.",
+          "severity": 0,
+          "range": {
+            "start": {
+              "line": 0,
+              "character": 793
+            },
+            "end": {
+              "line": 0,
+              "character": 1597
+            }
+          },
+          "source": "<temporary>/missing-ref.json"
+        },
+        {
+          "code": "normo-api-cursor-contract",
+          "path": [
+            "components",
+            "schemas"
+          ],
+          "message": "Een cursorresponse bevat een array met resultaten; de naam items is niet verplicht.",
+          "severity": 0,
+          "range": {
+            "start": {
+              "line": 0,
+              "character": 793
+            },
+            "end": {
+              "line": 0,
+              "character": 1597
+            }
+          },
+          "source": "<temporary>/missing-ref.json"
+        },
+        {
+          "code": "invalid-ref",
+          "path": [
+            "paths",
+            "/market-agreements",
+            "get",
+            "responses",
+            "200",
+            "content",
+            "application/json",
+            "schema",
+            "$ref"
+          ],
+          "message": "'#/components/schemas/Missing' does not exist",
+          "severity": 0,
+          "range": {
+            "start": {
+              "line": 0,
+              "character": 1911
+            },
+            "end": {
+              "line": 0,
+              "character": 1941
+            }
+          },
+          "source": "<temporary>/missing-ref.json"
+        }
+      ],
+      "stderr": ""
+    }
+  ],
+  "spectralVersion": "6.17.0",
+  "status": "passed",
+  "passed": 9,
+  "total": 9,
+  "pathNote": "Absolute bronpaden zijn voor publicatie vervangen door projectpaden of <temporary>/bestandsnaam."
+}
